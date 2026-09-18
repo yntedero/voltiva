@@ -1,15 +1,72 @@
-*.iml
-.gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
-.DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
+# Based on github/gitignore Android.gitignore plus project-specific rules
+
+# Gradle
+.gradle/
+build/
+.kotlin/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Local configuration (SDK path, signing, secrets)
 local.properties
+*.jks
+*.keystore
+google-services.json
+secrets.properties
+
+# Android Studio / IntelliJ
+.idea/
+*.iml
+*.ipr
+*.iws
+captures/
+.externalNativeBuild/
+.cxx/
+.navigation/
+render.experimental.xml
+misc.xml
+deploymentTargetDropDown.xml
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Build artifacts
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+output-metadata.json
+lint-results*.html
+lint-results*.xml
+app/release/
+app/debug/
+
+# Profiling and crash dumps
+*.hprof
+hs_err_pid*
+replay_pid*
+
+# Logs
+*.log
+
+# Compose screenshot test reports and generated references
+**/screenshotTest/reference/
+**/build/reports/
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Claude Code / AI tooling local state
+.claude/settings.local.json
+GATES.md
+
+# Local planning docs, not committed
+docs/
