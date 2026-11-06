@@ -1,0 +1,4 @@
+<resources>
+    <!-- Window theme in dark mode. The screens use the Compose VoltivaTheme. -->
+    <style name="Theme.Voltiva" parent="android:Theme.Material.NoActionBar" />
+</resources>

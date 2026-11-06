@@ -1,0 +1,14 @@
+[
+  { "id": "bb-1", "name": "Nabijacka Namestie SNP", "address": "Namestie SNP, Banska Bystrica", "city": "Banska Bystrica", "latitude": 48.7357, "longitude": 19.1459, "powerKw": 22, "connectors": ["TYPE_2"], "open24h": false },
+  { "id": "bb-2", "name": "Nabijacka Europa", "address": "Na Troskach, Banska Bystrica", "city": "Banska Bystrica", "latitude": 48.7378, "longitude": 19.1521, "powerKw": 150, "connectors": ["CCS", "TYPE_2"], "open24h": true },
+  { "id": "bb-3", "name": "Nabijacka Radvan", "address": "Mladeznicka, Banska Bystrica", "city": "Banska Bystrica", "latitude": 48.7185, "longitude": 19.1488, "powerKw": 50, "connectors": ["CCS", "CHADEMO"], "open24h": true },
+  { "id": "bb-4", "name": "Nabijacka Fonchorna", "address": "Tajovskeho, Banska Bystrica", "city": "Banska Bystrica", "latitude": 48.7270, "longitude": 19.1330, "powerKw": 22, "connectors": ["TYPE_2"], "open24h": false },
+  { "id": "bb-5", "name": "Nabijacka Sasova", "address": "Rudohorska, Banska Bystrica", "city": "Banska Bystrica", "latitude": 48.7560, "longitude": 19.1770, "powerKw": 50, "connectors": ["CCS", "TYPE_2"], "open24h": false },
+  { "id": "bb-6", "name": "Nabijacka Rudlova", "address": "Tulska, Banska Bystrica", "city": "Banska Bystrica", "latitude": 48.7480, "longitude": 19.1650, "powerKw": 22, "connectors": ["TYPE_2"], "open24h": false },
+  { "id": "bb-7", "name": "Nabijacka Podlavice", "address": "Lazovna, Banska Bystrica", "city": "Banska Bystrica", "latitude": 48.7380, "longitude": 19.1100, "powerKw": 50, "connectors": ["CCS"], "open24h": true },
+  { "id": "bb-8", "name": "Nabijacka Uhlisko", "address": "Uhlisko, Banska Bystrica", "city": "Banska Bystrica", "latitude": 48.7290, "longitude": 19.1480, "powerKw": 22, "connectors": ["TYPE_2"], "open24h": false },
+  { "id": "bb-9", "name": "Nabijacka Kremnicka", "address": "Kremnicka, Banska Bystrica", "city": "Banska Bystrica", "latitude": 48.7230, "longitude": 19.1200, "powerKw": 150, "connectors": ["CCS", "CHADEMO", "TYPE_2"], "open24h": true },
+  { "id": "bb-10", "name": "Nabijacka Zvolenska cesta", "address": "Zvolenska cesta, Banska Bystrica", "city": "Banska Bystrica", "latitude": 48.7050, "longitude": 19.1530, "powerKw": 150, "connectors": ["CCS"], "open24h": true },
+  { "id": "bb-11", "name": "Nabijacka Skubin", "address": "Skuteckeho, Banska Bystrica", "city": "Banska Bystrica", "latitude": 48.7590, "longitude": 19.1300, "powerKw": 22, "connectors": ["TYPE_2"], "open24h": false },
+  { "id": "bb-12", "name": "Nabijacka Senica", "address": "Senicka cesta, Banska Bystrica", "city": "Banska Bystrica", "latitude": 48.7120, "longitude": 19.1100, "powerKw": 50, "connectors": ["CCS", "TYPE_2"], "open24h": false }
+]
