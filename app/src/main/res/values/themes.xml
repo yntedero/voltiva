@@ -1,9 +1,4 @@
 <resources>
-    <!-- Platform shell theme only. The real theme is Compose MaterialTheme (dark). -->
-    <style name="Theme.Voltiva" parent="android:Theme.Material.NoActionBar">
-        <item name="android:windowBackground">@color/black</item>
-        <item name="android:statusBarColor">@color/black</item>
-        <item name="android:navigationBarColor">@color/black</item>
-        <item name="android:windowLightStatusBar">false</item>
-    </style>
+    <!-- Window theme only. The screens use the Compose VoltivaTheme. -->
+    <style name="Theme.Voltiva" parent="android:Theme.Material.Light.NoActionBar" />
 </resources>
