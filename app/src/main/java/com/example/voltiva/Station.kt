@@ -14,7 +14,7 @@ data class Station(
     val latitude: Double,
     val longitude: Double,
     val powerKw: Int,
-    val connectors: List<String>, // "TYPE_2", "CCS" or "CHADEMO"
+    val connectors: List<String>,
     val open24h: Boolean,
 )
 

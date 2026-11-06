@@ -1,5 +1,13 @@
 <resources>
     <string name="app_name">Voltiva</string>
+    <string name="back">Back</string>
+    <string name="power_kw">Power: %1$d kW</string>
+    <string name="connectors">Connectors: %1$s</string>
+    <string name="open_24h_yes">Open 24/7</string>
+    <string name="open_24h_no">Limited opening hours</string>
+    <string name="open_in_maps">Open in Maps</string>
+    <string name="no_maps_app">No maps app found</string>
+    <string name="station_image">Charging station</string>
     <string name="connector_type_2">Type 2</string>
     <string name="connector_ccs">CCS</string>
     <string name="connector_chademo">CHAdeMO</string>

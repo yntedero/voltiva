@@ -1,5 +1,6 @@
 package com.example.voltiva
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -37,15 +38,27 @@ class MainActivity : ComponentActivity() {
 
         setContent {
             VoltivaTheme {
-                StationListScreen(stations = stations)
+                StationListScreen(
+                    stations = stations,
+                    onStationClick = { station -> openStationDetail(station) },
+                )
             }
         }
+    }
+
+    private fun openStationDetail(station: Station) {
+        val intent = Intent(this, StationDetailActivity::class.java)
+        intent.putExtra(StationDetailActivity.EXTRA_STATION_ID, station.id)
+        startActivity(intent)
     }
 }
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun StationListScreen(stations: List<Station>) {
+fun StationListScreen(
+    stations: List<Station>,
+    onStationClick: (Station) -> Unit,
+) {
     Scaffold(
         topBar = {
             TopAppBar(title = { Text(stringResource(R.string.app_name)) })
@@ -60,17 +73,17 @@ fun StationListScreen(stations: List<Station>) {
             verticalArrangement = Arrangement.spacedBy(12.dp),
         ) {
             items(stations, key = { it.id }) { station ->
-                StationCard(station = station)
+                StationCard(station = station, onClick = { onStationClick(station) })
             }
         }
     }
 }
 
 @Composable
-fun StationCard(station: Station) {
+fun StationCard(station: Station, onClick: () -> Unit) {
     val connectorText = station.connectors.map { stringResource(connectorLabel(it)) }.joinToString(", ")
 
-    Card(modifier = Modifier.fillMaxWidth()) {
+    Card(onClick = onClick, modifier = Modifier.fillMaxWidth()) {
         Column(modifier = Modifier.padding(16.dp)) {
             Text(station.name, style = MaterialTheme.typography.titleMedium)
             Text(station.city)
@@ -88,6 +101,6 @@ fun StationListScreenPreview() {
         connectors = listOf("CCS", "TYPE_2"), open24h = true,
     )
     VoltivaTheme {
-        StationListScreen(stations = listOf(station))
+        StationListScreen(stations = listOf(station), onStationClick = {})
     }
 }

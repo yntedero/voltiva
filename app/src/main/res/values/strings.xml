@@ -1,5 +1,13 @@
 <resources xmlns:tools="http://schemas.android.com/tools" tools:locale="sk">
     <string name="app_name">Voltiva</string>
+    <string name="back">Spat</string>
+    <string name="power_kw">Vykon: %1$d kW</string>
+    <string name="connectors">Konektory: %1$s</string>
+    <string name="open_24h_yes">Otvorene nonstop</string>
+    <string name="open_24h_no">Obmedzene otvaracie hodiny</string>
+    <string name="open_in_maps">Otvorit v mapach</string>
+    <string name="no_maps_app">Nenasla sa aplikacia s mapami</string>
+    <string name="station_image">Nabijacia stanica</string>
     <string name="connector_type_2">Typ 2</string>
     <string name="connector_ccs">CCS</string>
     <string name="connector_chademo">CHAdeMO</string>
